@@ -46,8 +46,8 @@
                     echo $welcome = " 
                                     <script type=\"text/javascript\">
                                         swal({
-                                            title: \"Welcome back $username\",
-                                            text: \"Your being logged in\",
+                                            title: \"Bon retour parmis nous $username\",
+                                            text: \"Vous étes connecté\",
                                             type: \"success\",
                                             timer: 6000,
                                             showConfirmButton: false});

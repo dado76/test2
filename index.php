@@ -13,10 +13,10 @@
         <div id="loreg">
             <ul class="list-inline">
                 <li>
-                    <a class="btn btn-primary btn-lg" href="login.php">Connexion</a>
+                    <a class="btn btn-danger btn-lg" href="login.php">Connexion</a>
                 </li>
                 <li>
-                    <a class="btn btn-primary btn-lg" href="register.php">Crée un compte</a>
+                    <a class="btn btn-danger btn-lg" href="register.php">Crée un compte</a>
                 </li>
             </ul>
         </div>
@@ -25,9 +25,11 @@
             <p>
                 Vous éte connecté avec le profil <?php if(isset($_SESSION['username'])) echo $_SESSION['username']; ?> <a href="logout.php">Déconnexion</a>
             </p>
+			
         </div>
         <?php endif; ?>
-        </div>
+      <a href="https://www.gametracker.com/server_info/212.129.1.28:2302/" target="_blank"><img src="https://cache.gametracker.com/server_info/212.129.1.28:2302/b_560_95_1.png" border="0" width="560" height="95" alt=""/></a>
+	  </div>
    
 	</div>
 </div>

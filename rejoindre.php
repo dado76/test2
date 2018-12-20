@@ -5,7 +5,7 @@
 ?>
 
 
-	<div class="container text-center">
+	<div class="container">
 	<body background="K5JXuOD.png">
 	   <style>
 	body {
@@ -16,7 +16,6 @@ background-image:url(K5JXuOD.png);
 	   </style>
 
 		<h1>Bienvenue dans la communauté 76ers</h1>
-			<a href="https://www.gametracker.com/server_info/212.129.1.28:2302/" target="_blank"><img src="https://cache.gametracker.com/server_info/212.129.1.28:2302/b_560_95_1.png" border="0" width="560" height="95" alt=""/></a>
 		<?php 
             if(!isset($_SESSION['username'])):
         ?>
@@ -25,10 +24,10 @@ background-image:url(K5JXuOD.png);
         <div id="loreg">
             <ul class="list-inline">
                 <li>
-                    <a class="btn btn-primary btn-lg" href="login.php">Connexion</a>
+                    <a class="btn btn-danger btn-lg" href="login.php">Connexion</a>
                 </li>
                 <li>
-                    <a class="btn btn-primary btn-lg" href="register.php">Crée un compte</a>
+                    <a class="btn btn-danger btn-lg" href="register.php">Crée un compte</a>
                 </li>
             </ul>
         </div>
@@ -42,13 +41,14 @@ background-image:url(K5JXuOD.png);
         <?php endif; ?>
 </div>
 
-		   <div class="container text-center">
+		   <div class="container">
 
 
-	   <center>
-<h1>Nous rejoindre:</h1>
+	 
+<h2>Nous rejoindre</h1>
 
-
+<h4><li>Discord <br>
+<img src="téléchargement.jpg" href="">
 <h4><li>Télécharger A3 Launcher <br>
 <br>
       <a class="btn btn-danger " href="https://a3.launcher.eu/updates/setup_a3launcher.exe">Télécharger A3 lAUNCHER</a>

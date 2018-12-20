@@ -7,9 +7,9 @@
         <section id="login-main">
             <div class="container">
                 <div class="row">
-                    <h1>User Authentication system.</h1>
+        
                     <div class="col-md-6 col-md-offset-3 col-sm-12 col-xs-12">
-                        <h3>Login</h3>
+                        <h3>Connexion</h3>
                         <br>
 
                         <?php if(isset($result)){
@@ -39,15 +39,15 @@
                             </div>
                             <div class="form-group col-md-6">
                                 <div class="remember-me">
-                                    <label><input name="remember" value="yes" type="checkbox">Remember Me</label>
+                                    <label><input name="remember" value="yes" type="checkbox"> Se rappeler de moi</label>
                                 </div>
                             </div>
                             <div class="form-group col-md-6 button">
-                                <input name="loginBtn" type="submit" class="btn btn-primary btn-lg pull-right" value="Login"><br />
+                                <input name="loginBtn" type="submit" class="btn btn-danger btn-lg pull-right" value="Connexion"><br />
                             </div>
                         </form>
                         <div class="col-md-12 text-center lost-pwd">
-                            <a href="forgot_pwd.php">Lost your password?</a>
+                            <a href="forgot_pwd.php">Mot de passe perdu ?</a>
                         </div>
                     </div>
                 </div>
