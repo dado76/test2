@@ -1,25 +1,34 @@
-<html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css" />
-    <title>Hello!</title>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<?php 
+    $page_title = 'Homepage';
+    include_once'includes/header.php';
+    include_once'config/Session.php';    
+?>
+	<body background="K5JXuOD.png">
 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  </head>
-<div class="section group">
-	<div class="col span_6_of_6">
-<?php include("entete.php")?>
+	<div class="container text-center">
+		<h1>Bienvenue dans la communauté 76ers</h1>
+		<?php 
+            if(!isset($_SESSION['username'])):
+        ?>
+        <div id="loreg">
+            <ul class="list-inline">
+                <li>
+                    <a class="btn btn-primary btn-lg" href="login.php">Connexion</a>
+                </li>
+                <li>
+                    <a class="btn btn-primary btn-lg" href="register.php">Crée un compte</a>
+                </li>
+            </ul>
+        </div>
+        <?php else: ?>
+        <div id="usr">
+            <p>
+                Vous éte connecté avec le profil <?php if(isset($_SESSION['username'])) echo $_SESSION['username']; ?> <a href="logout.php">Déconnexion</a>
+            </p>
+        </div>
+        <?php endif; ?>
+        </div>
+   
 	</div>
-
-	<div class="col span_1_of_6">
-<?php include("menu.php")?>
-	</div>
-	<div class="col span_4_of_6">
-<?php include("tableau.php")?>
-	</div>
-
 </div>
+<?php include_once'includes/footer.php'; ?>
